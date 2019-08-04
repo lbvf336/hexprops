@@ -1,0 +1,285 @@
+"Phrases"
+{
+	"Props menu"
+	{
+		"en"		"Props menu"
+		"ru"		"Меню"
+	}
+	"Movedd"
+	{
+		"#format"    "{1:s}"
+		"en"		"Move: {1}"
+		"ru"		"Двигать: {1}"
+	}
+	"Physicdd"
+	{
+		"#format"    "{1:s}"
+		"en"		"Physic: {1}"
+		"ru"		"Физика: {1}"
+	}
+	"Place New Prop"
+	{
+		"en"		"Place New Prop"
+		"ru"		"Создать проп"
+	}
+	"Remove Props"
+	{
+		"en"		"Remove Props"
+		"ru"		"Удалить проп"
+	}
+	"Edit Props"
+	{
+		"en"		"Edit Props"
+		"ru"		"Редактировать"
+	}
+	"Save Props"
+	{
+		"en"		"Save Props"
+		"ru"		"Сохранить пропы"
+	}
+	"Reset Props"
+	{
+		"en"		"Reset Props"
+		"ru"		"Сбросить пропы"
+	}
+	"Delete All Props"
+	{
+		"en"		"Delete All Props"
+		"ru"		"Удалить все пропы"
+	}
+	"Edit"
+	{
+		"en"		"Edit"
+		"ru"		"Редактировать"
+	}
+	"Set Transparency"
+	{
+		"en"		"Set Transparency"
+		"ru"		"Прозрачность"
+	}
+	"Set Color"
+	{
+		"en"		"Set Color"
+		"ru"		"Цвет"
+	}
+	"Set LifePoints"
+	{
+		"en"		"Set LifePoints"
+		"ru"		"Очки жизни"
+	}
+	"Set Consistency"
+	{
+		"en"		"Set Consistency"
+		"ru"		"Коллизия"
+	}
+	"Set Size"
+	{
+		"en"		"Set Size (Not working on all props)"
+		"ru"		"Размер (работает не совсеми пропами)"
+	}
+	"Make Physic"
+	{
+		"en"		"Make Physic"
+		"ru"		"Создание физики"
+	}
+	"Are you sure"
+	{
+		"en"		"Are you sure?"
+		"ru"		"Вы уверены?"
+	}
+	"If you want to go back"
+	{
+		"en"		"If you want to go back"
+		"ru"		"Если захочешь вернуть назад"
+	}
+	"after you deleted the props"
+	{
+		"en"		"after you deleted the props"
+		"ru"		"после удаления пропов"
+	}
+	"press Reset Props and do NOT save the props"
+	{
+		"en"		"press Reset Props and do NOT save the props!"
+		"ru"		"нажми Сбросить пропы и НЕ сохраняй пропы!"
+	}
+	"NO"
+	{
+		"en"		"NO"
+		"ru"		"НЕТ"
+	}
+	"YES"
+	{
+		"en"		"YES"
+		"ru"		"ДА"
+	}
+	"Color"
+	{
+		"en"		"Color"
+		"ru"		"Цвет"
+	}
+	"Default"
+	{
+		"en"		"Default"
+		"ru"		"Стандарт"
+	}
+	"Red"
+	{
+		"en"		"Red"
+		"ru"		"Красный"
+	}
+	"Blue"
+	{
+		"en"		"Blue"
+		"ru"		"Синий"
+	}
+	"Green"
+	{
+		"en"		"Green"
+		"ru"		"Зеленый"
+	}
+	"Yellow"
+	{
+		"en"		"Yellow"
+		"ru"		"Желтый"
+	}
+	"Pink"
+	{
+		"en"		"Pink"
+		"ru"		"Розовый"
+	}
+	"Black"
+	{
+		"en"		"Black"
+		"ru"		"Черный"
+	}
+	"Trasparency"
+	{
+		"en"		"Trasparency"
+		"ru"		"Прозрачность"
+	}
+	"Full Visible"
+	{
+		"en"		"Full Visible"
+		"ru"		"Полностью виден"
+	}
+	"75 Visible"
+	{
+		"en"		"75% Visible"
+		"ru"		"75% видно"
+	}
+	"Half Visible"
+	{
+		"en"		"Half Visible"
+		"ru"		"Половина видимости"
+	}
+	"25 Visible"
+	{
+		"en"		"25% Visible"
+		"ru"		"25% видно"
+	}
+	"Invisible"
+	{
+		"en"		"Invisible"
+		"ru"		"Невидимый"
+	}
+	"LifePoints"
+	{
+		"en"		"LifePoints"
+		"ru"		"Очки жизни"
+	}
+	"Unbreakable"
+	{
+		"en"		"Unbreakable"
+		"ru"		"Неуязвимый"
+	}
+	"50HP"
+	{
+		"en"		"50HP"
+		"ru"		"50HP"
+	}
+	"100HP"
+	{
+		"en"		"100HP"
+		"ru"		"100HP"
+	}
+	"200HP"
+	{
+		"en"		"200HP"
+		"ru"		"200HP"
+	}
+	"Consistency"
+	{
+		"en"		"Consistency"
+		"ru"		"Коллизия"
+	}
+	"Solid"
+	{
+		"en"		"Solid"
+		"ru"		"Твердый"
+	}
+	"UnSolid"
+	{
+		"en"		"Un-Solid"
+		"ru"		"Проходимый"
+	}
+	"Size"
+	{
+		"en"		"Size"
+		"ru"		"Размер"
+	}
+	"Double"
+	{
+		"en"		"Double"
+		"ru"		"Двойной"
+	}
+	"Triple"
+	{
+		"en"		"Triple"
+		"ru"		"Тройной"
+	}
+	"Quadruple"
+	{
+		"en"		"Quadruple"
+		"ru"		"Четверной"
+	}
+	"Half"
+	{
+		"en"		"Half"
+		"ru"		"Половина"
+	}
+	"Prop successfully removed"
+	{
+		"en"		"[HexProps] Prop successfully removed!"
+		"ru"		"[HexProps] Проп успешно удален!"
+	}
+	"Prop couldnt be found"
+	{
+		"en"		"[HexProps] Prop couldn't be found!"
+		"ru"		"[HexProps] Проп не найден!"
+	}
+	"Props successfully saved"
+	{
+		"en"		"[HexProps] Props successfully saved!"
+		"ru"		"[HexProps] Пропы успешно сохранены!"
+	}
+	"No props were saved"
+	{
+		"en"		"[HexProps] No props were saved!"
+		"ru"		"[HexProps] Пропы не были сохранены!"
+	}
+	"Props successfully resetted"
+	{
+		"en"		"[HexProps] Props successfully resetted!"
+		"ru"		"[HexProps] Пропы успешно сброшены!"
+	}
+	"Error occured while creating the physic prop"
+	{
+		"en"		"[HexProps] Error occured while creating the physic prop!"
+		"ru"		"[HexProps] Ошибка при создании физики пропа!"
+	}
+	"Props deleted"
+	{
+		"en"		"[SM] Props deleted!"
+		"ru"		"[SM] Пропы удалены!"
+	}
+}
