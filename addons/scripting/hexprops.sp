@@ -73,17 +73,10 @@ public void OnMapStart()
 //читаем
 void PreparePropKv()
 {
-	char sMap[64], sId[64];
-	GetCurrentMap(sMap, sizeof(sMap));
+	char sMap[64];
+	GetUnifiedCurrentMap(sMap, sizeof(sMap));
 	
-	if(StrContains(sMap, "workshop", false) != -1)
-	{
-		GetCurrentWorkshopMap(sMap, sizeof(sMap), sId, sizeof(sId));
-		BuildPath(Path_SM, sPropPath, sizeof(sPropPath), "configs/props/workshop/%s", sId);
-		if(!FileExists(sPropPath)) CreateDirectory(sPropPath, 511);
-		BuildPath(Path_SM, sPropPath, sizeof(sPropPath), "configs/props/workshop/%s/%s.props.txt", sId, sMap);
-	}
-	else BuildPath(Path_SM, sPropPath, sizeof(sPropPath), "configs/props/%s.props.txt", sMap); //Get the right "map" file
+	BuildPath(Path_SM, sPropPath, sizeof(sPropPath), "configs/props/%s.props.txt", sMap); //Get the right "map" file
 	PropKv = new KeyValues("Props");
 	
 	if (!FileExists(sPropPath)) //Try to create kv file.
@@ -93,18 +86,6 @@ void PreparePropKv()
 	if (!PropKv.ImportFromFile(sPropPath)) //Import the kv file
 		SetFailState("- Props - Unable to import: %s", sPropPath);
 }
-
-void GetCurrentWorkshopMap(char[] sMap, int Path_SM, char[] sId, int iSizeId)
-{
-	char sExplodeBuffer[2][64];
-	GetCurrentMap(sPropPath, sizeof(sPropPath));
-	
-	ReplaceString(sPropPath, sizeof(sPropPath), "workshop/", "", false);
-	ExplodeString(sPropPath, "/", sExplodeBuffer, 2, 64);
-	
-	strcopy(sMap, Path_SM, sExplodeBuffer[1]);
-	strcopy(sId, iSizeId, sExplodeBuffer[0]);
-} 
 
 //Commands
 public Action Cmd_Props(int client, int args)
@@ -1107,4 +1088,19 @@ public int Native_IsEntProp(Handle plugin, int numParams)
 	int iEnt = GetNativeCell(1);
 	
 	return (FindInArray(iEnt) == -1);
+}
+
+void GetUnifiedCurrentMap(char[] szBuffer, int iBufferLength)
+{
+	GetCurrentMap(szBuffer, iBufferLength);
+	if (!strncmp("workshop/", szBuffer, 9, true))
+	{
+		strcopy(szBuffer, iBufferLength, szBuffer[9]);
+
+		int iPos = 0;
+		while ((iPos = FindCharInString(szBuffer, '/', true)) != -1 || (iPos = FindCharInString(szBuffer, '\\', true)) != -1)
+		{
+			szBuffer[iPos] = '_';
+		}
+	}
 }
